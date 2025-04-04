@@ -5,8 +5,8 @@ import { useNavigate } from 'react-router-dom';
 const Index = () => {
   const navigate = useNavigate();
   
-  // Redirect to the dashboard
   useEffect(() => {
+    // Redirect to the dashboard 
     navigate('/');
   }, [navigate]);
   

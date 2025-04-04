@@ -65,10 +65,9 @@ export const AppSidebar = () => {
               {navItems.map((item) => (
                 <SidebarMenuItem key={item.path}>
                   <SidebarMenuButton
-                    asChild
                     isActive={location.pathname === item.path}
                   >
-                    <Link to={item.path}>
+                    <Link to={item.path} className="flex w-full items-center gap-2">
                       <item.icon size={18} />
                       <span>{item.title}</span>
                     </Link>
@@ -79,10 +78,9 @@ export const AppSidebar = () => {
               {user?.role === 'admin' && adminItems.map((item) => (
                 <SidebarMenuItem key={item.path}>
                   <SidebarMenuButton
-                    asChild
                     isActive={location.pathname === item.path}
                   >
-                    <Link to={item.path}>
+                    <Link to={item.path} className="flex w-full items-center gap-2">
                       <item.icon size={18} />
                       <span>{item.title}</span>
                     </Link>
