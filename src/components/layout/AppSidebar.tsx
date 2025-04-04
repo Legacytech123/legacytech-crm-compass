@@ -68,7 +68,7 @@ export const AppSidebar = () => {
                     asChild
                     isActive={location.pathname === item.path}
                   >
-                    <Link to={item.path} className="flex items-center gap-2">
+                    <Link to={item.path}>
                       <item.icon size={18} />
                       <span>{item.title}</span>
                     </Link>
@@ -82,7 +82,7 @@ export const AppSidebar = () => {
                     asChild
                     isActive={location.pathname === item.path}
                   >
-                    <Link to={item.path} className="flex items-center gap-2">
+                    <Link to={item.path}>
                       <item.icon size={18} />
                       <span>{item.title}</span>
                     </Link>
