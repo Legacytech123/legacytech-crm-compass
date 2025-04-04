@@ -67,10 +67,11 @@ export const AppSidebar = () => {
                   <SidebarMenuButton
                     isActive={location.pathname === item.path}
                   >
-                    <Link to={item.path} className="flex w-full items-center gap-2">
+                    <div className="flex w-full items-center gap-2">
                       <item.icon size={18} />
                       <span>{item.title}</span>
-                    </Link>
+                      <Link to={item.path} className="absolute inset-0" />
+                    </div>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}
@@ -80,10 +81,11 @@ export const AppSidebar = () => {
                   <SidebarMenuButton
                     isActive={location.pathname === item.path}
                   >
-                    <Link to={item.path} className="flex w-full items-center gap-2">
+                    <div className="flex w-full items-center gap-2">
                       <item.icon size={18} />
                       <span>{item.title}</span>
-                    </Link>
+                      <Link to={item.path} className="absolute inset-0" />
+                    </div>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}
